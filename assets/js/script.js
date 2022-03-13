@@ -23,3 +23,20 @@ function addF() {
 function subF() {
     document.getElementById('add-fat').value--;
 }
+
+//functions to add to totals
+
+function totalP() {
+ document.getElementById("pro-total").innerHTML
+ += parseFloat(document.getElementById('add-protein').value);
+   }
+
+   function totalC() {
+    document.getElementById("carb-total").innerHTML
+    += parseFloat(document.getElementById('add-carb').value);
+      }
+
+      function totalF() {
+        document.getElementById("fat-total").innerHTML
+        += parseFloat(document.getElementById('add-fat').value);
+          }

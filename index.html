@@ -7,7 +7,7 @@
     <title>Macro Tracker</title>
 </head>
 <body>
-    <div>
+    <div id="macros-input-div">
         <p>
         <label for="add-protein">Protein</label>
         <input type="text" value="0" id="add-protein">
@@ -29,7 +29,31 @@
             <input type="button" value="-" id="fat-decrement" onclick="subF();" >
         </p>
 
-</div>
+    </div>
+<br>
+<br>
+<br>
+
+    <div id="macros-total-div">
+            <h3 class="totals-headings">Total Protein</h3>
+        <p id="pro-total">
+            &nbsp
+        </p>
+        <input type="button" id="total-p" value="add to todays protein total" onclick="totalP();">
+
+        <h3 class="totals-headings">Total Carbs</h3>
+        <p id="carb-total">
+            &nbsp
+        </p>
+        <input type="button" id="total-c" value="add to todays carbs total" onclick="totalC();">
+
+        <h3 class="totals-headings">Total Fat</h3>
+        <p id="fat-total">
+            &nbsp
+        </p>
+        <input type="button" id="total-f" value="add to todays fat total" onclick="totalF();">
+
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

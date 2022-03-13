@@ -8,18 +8,28 @@
 </head>
 <body>
     <div>
-        <input type="text" value="1" id="addMacros">
-        <label for="protein-increment">Protein</label>
+        <p>
+        <label for="add-protein">Protein</label>
+        <input type="text" value="0" id="add-protein">
         <input type="button" value="+" id="protein-increment" onclick="addP();" >
         <input type="button" value="-" id="protein-decrement" onclick="subP();" >
+        </p>
 
-        <label for="carb-input">Carbs</label>
-        <input type="button" value="+" id="carb-input" class="input-increment">
+        <p>
+            <label for="add-carb">Carbs</label>
+            <input type="text" value="0" id="add-carb">
+            <input type="button" value="+" id="carb-increment" onclick="addC();" >
+            <input type="button" value="-" id="carb-decrement" onclick="subC();" >
+        </p>
 
-        <label for="fat-input">Fat</label>
-        <input type="button" value="+" id="fat-input" class="input-increment">
+        <p>
+            <label for="add-fat">Fat</label>
+            <input type="text" value="0" id="add-fat">
+            <input type="button" value="+" id="fat-increment" onclick="addF();" >
+            <input type="button" value="-" id="fat-decrement" onclick="subF();" >
+        </p>
 
-    </div>
+</div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

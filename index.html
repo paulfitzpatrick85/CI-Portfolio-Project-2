@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Macro Tracker</title>
 </head>
 <body>
-    
+    <div>
+        <input type="text" value="1" id="addMacros">
+        <label for="protein-increment">Protein</label>
+        <input type="button" value="+" id="protein-increment" onclick="addP();" >
+        <input type="button" value="-" id="protein-decrement" onclick="subP();" >
+
+        <label for="carb-input">Carbs</label>
+        <input type="button" value="+" id="carb-input" class="input-increment">
+
+        <label for="fat-input">Fat</label>
+        <input type="button" value="+" id="fat-input" class="input-increment">
+
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

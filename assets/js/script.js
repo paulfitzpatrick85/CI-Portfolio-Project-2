@@ -27,10 +27,12 @@ function subF() {
 
 // functions to add to totals
 
-function totalP() {                                           
- document.getElementById("pro-total").innerHTML
- += parseFloat(document.getElementById('add-protein').value);
-   }
+function totalP() {     
+    let newValue = document.getElementById("pro-total")                                    
+    let proTotal = parseInt(document.getElementById("pro-total").innerText);
+    let addProtein = parseInt(document.getElementById('add-protein').value);
+    newValue.innerText = proTotal + addProtein
+}
        
 
    function totalC() {

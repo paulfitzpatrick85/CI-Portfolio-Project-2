@@ -13,21 +13,25 @@
         <label for="add-protein">Protein</label>
         <input type="text" value="0" id="add-protein">
         <input type="button" value="+" id="protein-increment" onclick="addP();" >
-        <input type="button" value="-" id="protein-decrement" onclick="subP();" >
+        <input type="button" value="-" id="protein-decrement" onclick="subP();" > <br>
+        <input type="button" id="total-p" value="add to todays protein total" onclick="totalProtein();">
         </p>
 
         <p>
             <label for="add-carb">Carbs</label>
             <input type="text" value="0" id="add-carb">
             <input type="button" value="+" id="carb-increment" onclick="addC();" >
-            <input type="button" value="-" id="carb-decrement" onclick="subC();" >
+            <input type="button" value="-" id="carb-decrement" onclick="subC();" > <br>
+            <input type="button" id="total-c" value="add to todays carbs total" onclick="totalCarb();">
+
         </p>
 
         <p>
             <label for="add-fat">Fat</label>
             <input type="text" value="0" id="add-fat">
             <input type="button" value="+" id="fat-increment" onclick="addF();" >
-            <input type="button" value="-" id="fat-decrement" onclick="subF();" >
+            <input type="button" value="-" id="fat-decrement" onclick="subF();" > <br>
+            <input type="button" id="total-f" value="add to todays fat total" onclick="totalFat();">
         </p>
 
     </div>
@@ -40,21 +44,26 @@
         <p id="pro-total">
             0
         </p>
-        <input type="button" id="total-p" value="add to todays protein total" onclick="totalP();">
-
+        
         <h3 class="totals-headings">Total Carbs</h3>
         <p id="carb-total">
             0
         </p>
-        <input type="button" id="total-c" value="add to todays carbs total" onclick="totalC();">
-
+        
         <h3 class="totals-headings">Total Fat</h3>
         <p id="fat-total">
             0
         </p>
-        <input type="button" id="total-f" value="add to todays fat total" onclick="totalF();">
+        </div>
 
-    </div>
+        <div>
+            <p id="cal-total">
+                0
+            </p>
+            <input type="button" id="cal-total-button" value="calculate total calories" onclick="totalCal();">
+        </div>
+
     <script src="assets/js/script.js"></script>
+
 </body>
 </html>

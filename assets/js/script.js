@@ -27,20 +27,35 @@ function subF() {
 
 // functions to add to totals
 
-function totalP() {     
-    let newValue = document.getElementById("pro-total")                                    
+function totalProtein() {     
+    let proValue = document.getElementById("pro-total")                                    
     let proTotal = parseInt(document.getElementById("pro-total").innerText);
     let addProtein = parseInt(document.getElementById('add-protein').value);
-    newValue.innerText = proTotal + addProtein
+    proValue.innerText = proTotal + addProtein
+}
+
+function totalCarb() {     
+    let carbValue = document.getElementById("carb-total")                                    
+    let carbTotal = parseInt(document.getElementById("carb-total").innerText);
+    let addCarb = parseInt(document.getElementById('add-carb').value);
+    carbValue.innerText = carbTotal + addCarb
+}
+
+function totalFat() {     
+    let fatValue = document.getElementById("fat-total")                                    
+    let fatTotal = parseInt(document.getElementById("fat-total").innerText);
+    let addFat = parseInt(document.getElementById('add-fat').value);
+    fatValue.innerText = fatTotal + addFat
 }
        
 
-   function totalC() {
-    document.getElementById("carb-total").innerHTML
-    += parseFloat(document.getElementById('add-carb').value);
-      }
+   //function to calculate total calories from users given inputs
 
-      function totalF() {
-        document.getElementById("fat-total").innerHTML
-        += parseFloat(document.getElementById('add-fat').value);
-          }
+   function totalCal() {
+    let proTotal = parseInt(document.getElementById("pro-total").innerText);
+    let carbTotal = parseInt(document.getElementById("carb-total").innerText);
+    let fatTotal = parseInt(document.getElementById("fat-total").innerText);
+       let calValue = document.getElementById("cal-total")
+       let calTotal = parseInt(document.getElementById("cal-total").innerText);
+        calValue.innerText = calTotal + (proTotal * 4) + (carbTotal * 4) + (fatTotal * 9);
+   }

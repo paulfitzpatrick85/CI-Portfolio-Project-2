@@ -1,24 +1,32 @@
-/* body {
-    width: 75%;
-    height: 600px;
+body {
+    background-color: #D9CBD5;   
 }
 
-#macros-input-div {
-    display: block;
-    float: left;
+#app-area {
+    background-color: #31D6D7 ; 
+    width: 66%;
+    height: 450px;
+    text-align: center;
+    
 }
+
+ #macros-input-div {
+    background-color: #F351BF ;
+    float: left;
+} 
 
 #chart {
-    display: block;
+    width: 50%;
+    padding: 20px 0px 10px 0px;
+    display: inline-block;   
 }
 
 #macros-total-div {
-    display: block;
+
+    background-color: #F351BF ;
     float: right;
 }
 
-
-#cut-btn {
-    background-color: aqua;
-    border-radius: 25%;
-} */
+#total-and-remaining {
+    padding-left: 200px;
+}

@@ -1,5 +1,5 @@
 function goal() {
-    calGoal = prompt ("Enter the max number of calories you want to consume per day");
+    var calGoal = prompt ("Enter the max number of calories you want to consume per day");
     if (isNaN(calGoal))
         {
          alert ("Sorry! " + calGoal + " isn't a number now is it???");
@@ -9,6 +9,7 @@ function goal() {
         else {
         return;
     }
+    document.getElementById("rem-cals").innerText = calGoal;
 }
 
 //functions to add and subtract users clicked input
@@ -70,6 +71,7 @@ function totalFat() {
        let calValue = document.getElementById("cal-total")
        let calTotal = parseInt(document.getElementById("cal-total").innerText);
         calValue.innerText = calTotal + (proTotal * 4) + (carbTotal * 4) + (fatTotal * 9);
+
    }
 
 
@@ -91,8 +93,8 @@ function totalFat() {
     // Set chart options
     var options = {
        'title':'Recommended macro ratio maintenance',
-       'width':550,
-       'height':400
+    //    'width':550,
+    //    'height':400
     };
 
     // Instantiate and draw the chart.
@@ -117,8 +119,8 @@ function totalFat() {
     // Set chart options
     var options = {
        'title':'Recommended macro ratio cutting',
-       'width':550,
-       'height':400
+    //    'width':550,
+    //    'height':400
     };
 
     // Instantiate and draw the chart.
@@ -143,8 +145,8 @@ function totalFat() {
     // Set chart options
     var options = {
        'title':'Recommended macro ratio bulking',
-       'width':550,
-       'height':400
+    //    'width':550,
+    //    'height':400
     };
 
     // Instantiate and draw the chart.
@@ -154,10 +156,3 @@ function totalFat() {
  google.charts.Callback(bulk);
 
 
-//  function welcome() {
-//     yourName = prompt ("Enter your name");
-//     if ( confirm ("Is your name correct?") == true)
-//         {
-//         alert ("Welcome, " + yourName);
-//     }
-// }

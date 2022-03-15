@@ -14,7 +14,7 @@
 </head>
 
 <body onload="goal();">
-
+    <div id="app-area">
     <div id="macros-input-div">
         <p>
         <label for="add-protein">Protein</label>
@@ -63,18 +63,25 @@
         <div onload="maintenance();" id ="chart"> <!--style = "width: 25%; height: 400px; margin: 0 auto"-->
         </div>
 
-        <div>
+        <div id="total-and-remaining">
+            <p>
+            <input type="button" id="cut-btn" value="Cut" onclick="cut();">
+            <input type="button" id="maint-btn" value="maintenance" onclick="maintenance();">
+            <input type="button" id="bulk-btn" value="Bulk" onclick="bulk();">
+        </p>
+
+            <h4>Calories Consumed</h4>
             <p id="cal-total">
                 0
+            </p>
+            <h4>Calories Remaining</h4>
+            <p id="rem-cals">
+                
             </p>
             <input type="button" id="cal-total-button" value="calculate total calories" onclick="totalCal();">
         </div>
 
-        <div id="chart-buttons">
-            <input type="button" id="cut-btn" value="Cut" onclick="cut();">
-            <input type="button" id="maint-btn" value="maintenance" onclick="maintenance();">
-            <input type="button" id="bulk-btn" value="Bulk" onclick="bulk();">
-        </div>
+    </div>
     
 
     <script src="assets/js/script.js"></script>

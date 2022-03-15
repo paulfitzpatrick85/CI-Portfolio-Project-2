@@ -3,8 +3,11 @@ function goal() {
     if (isNaN(calGoal))
         {
          alert ("Sorry! " + calGoal + " isn't a number now is it???");
-        } else {
-        alert ("Great! let's help keep within " + calGoal + " calories!");
+        } else if(calGoal) {
+            alert ("Great! let's help keep within " + calGoal + " calories!");
+        }
+        else {
+        return;
     }
 }
 

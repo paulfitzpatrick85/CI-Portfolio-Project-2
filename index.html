@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+    </script>
+    <script type = "text/javascript">
+       google.charts.load('current', {packages: ['corechart']});     
+    </script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Macro Tracker</title>
 </head>
 <body>
+    <div onload="maintenance();" id ="chart" style = "width: 25%; height: 400px; margin: 0 auto">
+    </div>
+    
+    <div id="percentage-buttons">
+        <input type="button" id="cut-btn" value="Cut" onclick="cut();">
+        <input type="button" id="bulk-btn" value="Bulk" onclick="bulk();">
+        <input type="button" id="maint-btn" value="maintenance" onclick="maintenance();">
+    </div>
+
     <div id="macros-input-div">
         <p>
         <label for="add-protein">Protein</label>

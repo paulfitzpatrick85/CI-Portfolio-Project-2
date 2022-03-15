@@ -59,3 +59,84 @@ function totalFat() {
        let calTotal = parseInt(document.getElementById("cal-total").innerText);
         calValue.innerText = calTotal + (proTotal * 4) + (carbTotal * 4) + (fatTotal * 9);
    }
+
+
+   //pie chart functions
+
+   //onload chart
+
+   function maintenance() {
+    // Define the chart to be drawn.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Browser');
+    data.addColumn('number', 'Percentage');
+    data.addRows([
+       ['Protein', 40],
+       ['Carbohydrates', 40],
+       ['Fat', 20]
+       ]);
+       
+    // Set chart options
+    var options = {
+       'title':'Recommended macro ratio maintenance',
+       'width':550,
+       'height':400
+    };
+
+    // Instantiate and draw the chart.
+    var chart = new google.visualization.PieChart(document.getElementById('chart'));
+    chart.draw(data, options);
+ }
+ google.charts.setOnLoadCallback(maintenance);
+
+ //onclick cut chart 
+
+ function cut() {
+    // Define the chart to be drawn.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Browser');
+    data.addColumn('number', 'Percentage');
+    data.addRows([
+       ['Protein', 60],
+       ['Carbohydrates', 20],
+       ['Firefox', 20]
+     ]);
+       
+    // Set chart options
+    var options = {
+       'title':'Recommended macro ratio cutting',
+       'width':550,
+       'height':400
+    };
+
+    // Instantiate and draw the chart.
+    var chart = new google.visualization.PieChart(document.getElementById('chart'));
+    chart.draw(data, options);
+ }
+ google.charts.Callback(cut);
+
+ //onclick bulk chart
+
+ function bulk() {
+    // Define the chart to be drawn.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Browser');
+    data.addColumn('number', 'Percentage');
+    data.addRows([
+       ['Protein', 50],
+        ['Carbohydrates', 30], 
+       ['Fat', 20],
+     ]);
+       
+    // Set chart options
+    var options = {
+       'title':'Recommended macro ratio bulking',
+       'width':550,
+       'height':400
+    };
+
+    // Instantiate and draw the chart.
+    var chart = new google.visualization.PieChart(document.getElementById('chart'));
+    chart.draw(data, options);
+ }
+ google.charts.Callback(bulk);

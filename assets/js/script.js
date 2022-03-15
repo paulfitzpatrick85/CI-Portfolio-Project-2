@@ -1,3 +1,12 @@
+function goal() {
+    calGoal = prompt ("Enter the max number of calories you want to consume per day");
+    if (isNaN(calGoal))
+        {
+         alert ("Sorry! " + calGoal + " isn't a number now is it???");
+        } else {
+        alert ("Great! let's help keep within " + calGoal + " calories!");
+    }
+}
 
 //functions to add and subtract users clicked input
 function addP() {
@@ -140,3 +149,12 @@ function totalFat() {
     chart.draw(data, options);
  }
  google.charts.Callback(bulk);
+
+
+//  function welcome() {
+//     yourName = prompt ("Enter your name");
+//     if ( confirm ("Is your name correct?") == true)
+//         {
+//         alert ("Welcome, " + yourName);
+//     }
+// }

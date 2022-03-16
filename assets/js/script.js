@@ -92,7 +92,7 @@ function totalFat() {
        
     // Set chart options
     var options = {
-       'title':'Recommended macro ratio maintenance',
+       'title':'Popular maintenance macro ratio',
     //    'width':550,
     //    'height':400
     };
@@ -113,15 +113,18 @@ function totalFat() {
     data.addRows([
        ['Protein', 60],
        ['Carbohydrates', 20],
-       ['Firefox', 20]
+       ['Fat', 20]
      ]);
        
     // Set chart options
     var options = {
-       'title':'Recommended macro ratio cutting',
-    //    'width':550,
-    //    'height':400
-    };
+       'title':'Popular cutting macro ratio',
+       
+    }
+
+    chartArea: {
+           backgroundColor: 'rgba(63,94,251,0.7516048655790442)'
+         }
 
     // Instantiate and draw the chart.
     var chart = new google.visualization.PieChart(document.getElementById('chart'));
@@ -144,7 +147,7 @@ function totalFat() {
        
     // Set chart options
     var options = {
-       'title':'Recommended macro ratio bulking',
+       'title':'Popular bulking macro ratio',
     //    'width':550,
     //    'height':400
     };

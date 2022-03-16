@@ -4,8 +4,8 @@ body {
 
 #app-area {
     background: radial-gradient(circle, rgba(63,94,251,0.7516048655790442) 0%, rgba(70,248,252,0.9700922605370274) 100%); 
-    width: 66%;
-    height: 500px;
+    width: 50%;
+    height: 700px;
     text-align: center;
     
 }
@@ -15,12 +15,13 @@ h1 {
 }
 
  #macros-input-div {
-    background-color: rgba(216, 129, 191, 0.5);
+    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
     float: left;
     padding: 10px 20px 10px 20px;
-    margin-left: 10px;
+    margin-left: 5%;
     line-height: 25px;
     border-radius: 15%;
+    height: 250px;
 } 
 
 #chart {
@@ -28,13 +29,16 @@ h1 {
     padding: 10px 20px 10px 20px;
     display: inline-block;   
 }
+ 
+
+
 
 #macros-total-div {
 
-    background-color: rgba(216, 129, 191, 0.5);
+    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
     float: right;
     padding: 10px 20px 10px 20px;
-    margin-right: 10px;
+    margin-right: 5%;
     border-radius: 15%;
 }
 
@@ -44,13 +48,16 @@ h1 {
 /*button styling*/
 
 .input-btn {
-    width: 10px;
+    width: 20px;
+    background-color: antiquewhite;
 }
 
 .round-btn {
+font-weight: 600;
 border-radius: 50%;
 height: 40px;
 width: 50px;
+background: radial-gradient(circle, rgba(84,106,223,0.6563667703409488) 0%, rgba(70,248,252,0.720792540649072) 100%);
 }
 
 .symbols {

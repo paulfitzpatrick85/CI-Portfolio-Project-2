@@ -1,32 +1,58 @@
 body {
-    background-color: #D9CBD5;   
+    background-color: rgba(63,94,251,0.7516048655790442);
 }
 
 #app-area {
-    background-color: #31D6D7 ; 
+    background: radial-gradient(circle, rgba(63,94,251,0.7516048655790442) 0%, rgba(70,248,252,0.9700922605370274) 100%); 
     width: 66%;
-    height: 450px;
+    height: 500px;
     text-align: center;
     
 }
+h1 {
+    padding-top: 20px;
+    letter-spacing: 6px;
+}
 
  #macros-input-div {
-    background-color: #F351BF ;
+    background-color: rgba(216, 129, 191, 0.5);
     float: left;
+    padding: 10px 20px 10px 20px;
+    margin-left: 10px;
+    line-height: 25px;
+    border-radius: 15%;
 } 
 
 #chart {
-    width: 50%;
-    padding: 20px 0px 10px 0px;
+    width: 40%;
+    padding: 10px 20px 10px 20px;
     display: inline-block;   
 }
 
 #macros-total-div {
 
-    background-color: #F351BF ;
+    background-color: rgba(216, 129, 191, 0.5);
     float: right;
+    padding: 10px 20px 10px 20px;
+    margin-right: 10px;
+    border-radius: 15%;
 }
 
 #total-and-remaining {
     padding-left: 200px;
+}
+/*button styling*/
+
+.input-btn {
+    width: 10px;
+}
+
+.round-btn {
+border-radius: 50%;
+height: 40px;
+width: 50px;
+}
+
+.symbols {
+    font-size: large;
 }

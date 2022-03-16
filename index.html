@@ -15,46 +15,47 @@
 
 <body onload="goal();">
     <div id="app-area">
+        <h1>MACRO TRACKER</h1>
     <div id="macros-input-div">
         <p>
-        <label for="add-protein">Protein</label>
-        <input type="text" value="0" id="add-protein">
-        <input type="button" value="+" id="protein-increment" onclick="addP();" >
-        <input type="button" value="-" id="protein-decrement" onclick="subP();" > <br>
-        <input type="button" id="total-p" value="add to todays protein total" onclick="totalProtein();">
+        <label for="add-protein">Protein</label><br>
+        <input type="button" value="+" class="round-btn symbols" id="protein-increment" onclick="addP();" >
+        <input type="text" value="0" class="input-btn" id="add-protein">
+        <input type="button" value="-" class="round-btn" id="protein-decrement" onclick="subP();" >
+        <input type="button" id="total-p" class="round-btn" value="Add" onclick="totalProtein();">
         </p>
 
         <p>
-            <label for="add-carb">Carbs</label>
-            <input type="text" value="0" id="add-carb">
-            <input type="button" value="+" id="carb-increment" onclick="addC();" >
-            <input type="button" value="-" id="carb-decrement" onclick="subC();" > <br>
-            <input type="button" id="total-c" value="add to todays carbs total" onclick="totalCarb();">
+            <label for="add-carb">Carbs</label><br>
+            <input type="button" value="+" class="round-btn symbols" id="carb-increment" onclick="addC();" >
+            <input type="text" value="0" class="input-btn" id="add-carb">
+            <input type="button" value="-" class="round-btn symbols" id="carb-decrement" onclick="subC();" > 
+            <input type="button" id="total-c" class="round-btn" value="Add" onclick="totalCarb();">
 
         </p>
 
         <p>
-            <label for="add-fat">Fat</label>
-            <input type="text" value="0" id="add-fat">
-            <input type="button" value="+" id="fat-increment" onclick="addF();" >
-            <input type="button" value="-" id="fat-decrement" onclick="subF();" > <br>
-            <input type="button" id="total-f" value="add to todays fat total" onclick="totalFat();">
+            <label for="add-fat">Fat</label><br>
+            <input type="button" value="+" class="round-btn symbols" id="fat-increment" onclick="addF();" >
+            <input type="text" value="0" class="input-btn" id="add-fat">
+            <input type="button" value="-" class="round-btn symbols"  id="fat-decrement" onclick="subF();" > 
+            <input type="button" id="total-f" class="round-btn" value="Add" onclick="totalFat();">
         </p>
 
     </div>
 
      <div id="macros-total-div">
-            <h3 class="totals-headings">Total Protein</h3>
+            <h3 class="totals-headings">Total Protein Today</h3>
         <p id="pro-total">
             0
         </p>
         
-        <h3 class="totals-headings">Total Carbs</h3>
+        <h3 class="totals-headings">Total Carbs Today</h3>
         <p id="carb-total">
             0
         </p>
         
-        <h3 class="totals-headings">Total Fat</h3>
+        <h3 class="totals-headings">Total Fat Today</h3>
         <p id="fat-total">
             0
         </p>

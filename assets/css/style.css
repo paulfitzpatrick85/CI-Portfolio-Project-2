@@ -5,7 +5,7 @@
 #app-area {
     background: radial-gradient(circle, rgba(63,94,251,0.7516048655790442) 0%, rgba(70,248,252,0.9700922605370274) 100%); 
     width: 75%;
-    height: 500px;
+    height: 540px;
     text-align: center;
     margin: auto;
     border-radius: 15px;
@@ -33,7 +33,37 @@ table {
     height: 150px
 }
 
- 
+#total-and-remaining {
+    width: 50%; 
+    margin: 20px auto;
+    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
+    border-radius: 15px;
+    /* height:360px; */
+} 
+
+#calculate-div {
+    width: 35%; 
+    margin: 20px auto;
+    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
+    border-radius: 15px;
+    padding: 15px 5px 15px 5px;
+}
+
+p {
+    padding: 0;
+}
+
+h4 {
+    padding-top: 10px;
+    padding: 5px 0px 5px 0pxpx;
+    margin: 0px;
+}
+
+.outputs {
+    text-decoration: underline rgba(63,94,251,0.7516048655790442);
+    width: 50px;
+    margin: auto;
+    
 
 /*
 #chart {
@@ -44,10 +74,8 @@ table {
  
 
 
-
- #total-and-remaining {
-    padding-left: 200px;
-} */
+*/
+ 
 /*button styling*/
 
 /* .input-btn {

@@ -1,5 +1,5 @@
 function goal() {
-    var calGoal = prompt ("Enter the max number of calories you want to consume per day");
+    var calGoal = prompt ("Enter the number of calories you want to set as a target for each day.");
     if (isNaN(calGoal))
         {
          alert ("Sorry! " + calGoal + " isn't a number now is it???");

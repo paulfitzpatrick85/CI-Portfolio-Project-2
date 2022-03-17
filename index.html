@@ -26,20 +26,20 @@
             </tr>
 
             <tr>
-                <td><input type="button" value="+" class="round-btn symbols" id="protein-increment" onclick="addP();" >
+                <td><input type="button" value="+" class="round-btn btn" id="protein-increment" onclick="addP();" >
                     <input type="text" value="0" class="input-btn" id="add-protein">
-                    <input type="button" value="-" class="round-btn symbols" id="protein-decrement" onclick="subP();" > <br>
-                    <input type="button" id="total-p" class="round-btn" value="Add" onclick="totalProtein();"></td>
+                    <input type="button" value="-" class="round-btn btn" id="protein-decrement" onclick="subP();" > <br>
+                    <input type="button" id="total-p" class="add-btn btn" value="Add" onclick="totalProtein();"></td>
 
-                <td><input  type="button" value="+" class="round-btn symbols" id="carb-increment" onclick="addC();" >
+                <td><input  type="button" value="+" class="round-btn btn" id="carb-increment" onclick="addC();" >
                     <input  type="text" value="0" class="input-btn" id="add-carb">
-                    <input  type="button" value="-" class="round-btn symbols" id="carb-decrement" onclick="subC();" > <br>
-                    <input  type="button" id="total-c" class="round-btn" value="Add" onclick="totalCarb();"></td>
+                    <input  type="button" value="-" class="round-btn btn" id="carb-decrement" onclick="subC();" > <br>
+                    <input  type="button" id="total-c" class="add-btn btn" value="Add" onclick="totalCarb();"></td>
 
-                <td> <input type="button" value="+" class="round-btn symbols" id="fat-increment" onclick="addF();" >
+                <td> <input type="button" value="+" class="round-btn btn" id="fat-increment" onclick="addF();" >
                     <input type="text" value="0" class="input-btn" id="add-fat">
-                    <input type="button" value="-" class="round-btn symbols"  id="fat-decrement" onclick="subF();" > <br>
-                    <input type="button" id="total-f" class="round-btn" value="Add" onclick="totalFat();"></td>
+                    <input type="button" value="-" class="round-btn btn"  id="fat-decrement" onclick="subF();" > <br>
+                    <input type="button" id="total-f" class="add-btn btn" value="Add" onclick="totalFat();"></td>
             </tr>
             <tr>
                 <td>total</td>
@@ -71,7 +71,7 @@
             </div>
 
             <div id="calculate-div">
-                <input type="button" id="cal-total-button" value="calculate total calories" onclick="totalCal();">
+                <input type="button" class="btn add-btn" id="cal-total-button" value="calculate total calories" onclick="totalCal();">
             </div>
     </div>
     

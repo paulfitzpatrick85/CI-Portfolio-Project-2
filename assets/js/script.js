@@ -9,7 +9,7 @@ function goal() {
         else {
         return;
     }
-    document.getElementById("rem-cals").innerText = calGoal;
+    document.getElementById("tar-cals").innerText = calGoal;
 }
 
 //functions to add and subtract users clicked input
@@ -38,27 +38,28 @@ function subF() {
 }
 
 
+
 // functions to add to totals
 
 function totalProtein() {     
-    let proValue = document.getElementById("pro-total")                                    
+    let proValue = document.getElementById("pro-total");                                    
     let proTotal = parseInt(document.getElementById("pro-total").innerText);
     let addProtein = parseInt(document.getElementById('add-protein').value);
-    proValue.innerText = proTotal + addProtein
+    proValue.innerText = proTotal + addProtein;
 }
 
 function totalCarb() {     
-    let carbValue = document.getElementById("carb-total")                                    
+    let carbValue = document.getElementById("carb-total");                                    
     let carbTotal = parseInt(document.getElementById("carb-total").innerText);
     let addCarb = parseInt(document.getElementById('add-carb').value);
-    carbValue.innerText = carbTotal + addCarb
+    carbValue.innerText = carbTotal + addCarb;
 }
 
 function totalFat() {     
-    let fatValue = document.getElementById("fat-total")                                    
+    let fatValue = document.getElementById("fat-total");                                    
     let fatTotal = parseInt(document.getElementById("fat-total").innerText);
     let addFat = parseInt(document.getElementById('add-fat').value);
-    fatValue.innerText = fatTotal + addFat
+    fatValue.innerText = fatTotal + addFat;
 }
        
 
@@ -68,10 +69,22 @@ function totalFat() {
     let proTotal = parseInt(document.getElementById("pro-total").innerText);
     let carbTotal = parseInt(document.getElementById("carb-total").innerText);
     let fatTotal = parseInt(document.getElementById("fat-total").innerText);
-       let calValue = document.getElementById("cal-total")
+       let calValue = document.getElementById("cal-total");
        let calTotal = parseInt(document.getElementById("cal-total").innerText);
         calValue.innerText = calTotal + (proTotal * 4) + (carbTotal * 4) + (fatTotal * 9);
 
+    /////////////////not working
+    //  calGoal = document.getElementById("tar-cals").innerText;
+    //    let remCals = document.getElementById("rem-cals");
+    //    let remTotal = parseInt(document.getElementById("rem-cals").innerText);
+    //    if (calValue.innerText = 0) {
+    //     remCals.innerText = calGoal - ((proTotal * 4) + (carbTotal * 4) + (fatTotal * 9)) ;
+    //       } else {
+    //         remCals.innerText = calGoal - calValue;
+    //    }
+       
+        
+      
    }
 
 

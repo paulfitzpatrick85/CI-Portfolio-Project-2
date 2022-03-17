@@ -1,29 +1,41 @@
-body {
-    background-color: rgba(63,94,251,0.7516048655790442);
-}
+ body {
+    background-color: rgba(110, 110, 139, 0.752);
+} 
 
 #app-area {
     background: radial-gradient(circle, rgba(63,94,251,0.7516048655790442) 0%, rgba(70,248,252,0.9700922605370274) 100%); 
-    width: 50%;
-    height: 700px;
+    width: 75%;
+    height: 500px;
     text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    }
+
+table {
+    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
     
 }
+
 h1 {
     padding-top: 20px;
-    letter-spacing: 6px;
+    letter-spacing: 8px;
 }
 
- #macros-input-div {
-    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
-    float: left;
-    padding: 10px 20px 10px 20px;
-    margin-left: 5%;
-    line-height: 25px;
-    border-radius: 15%;
-    height: 250px;
-} 
+.input-btn {
+    width: 20px;
+    background-color: antiquewhite;
+}
 
+table {
+    border-radius: 15px;
+    width: 75%;
+    margin: auto;
+    height: 150px
+}
+
+ 
+
+/*
 #chart {
     width: 40%;
     padding: 10px 20px 10px 20px;
@@ -33,21 +45,12 @@ h1 {
 
 
 
-#macros-total-div {
-
-    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
-    float: right;
-    padding: 10px 20px 10px 20px;
-    margin-right: 5%;
-    border-radius: 15%;
-}
-
-#total-and-remaining {
+ #total-and-remaining {
     padding-left: 200px;
-}
+} */
 /*button styling*/
 
-.input-btn {
+/* .input-btn {
     width: 20px;
     background-color: antiquewhite;
 }
@@ -62,4 +65,5 @@ background: radial-gradient(circle, rgba(84,106,223,0.6563667703409488) 0%, rgba
 
 .symbols {
     font-size: large;
-}
+} */
+ 

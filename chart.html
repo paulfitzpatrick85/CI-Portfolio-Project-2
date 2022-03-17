@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+    </script>
+    <script type = "text/javascript">
+       google.charts.load('current', {packages: ['corechart']});     
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Macro Tracker</title>
+</head>
+
+<body>
+    <div class="app-area">
+
+     <div id ="chart"> 
+        </div>
+    
+    <div id="total-and-remaining">
+            <p>
+            <input type="button" id="cut-btn btn" value="Cut" onclick="cut();">
+            <input type="button" id="maint-btn btn" value="maintenance" onclick="maintenance();">
+            <input type="button" id="bulk-btn btn" value="Bulk" onclick="bulk();">
+        </p>
+
+    </div> 
+
+    <p><a href="index.html">charts</a></p>
+
+     <script src="assets/js/script.js"></script>
+
+</body>
+</html>

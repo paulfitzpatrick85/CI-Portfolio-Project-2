@@ -14,6 +14,10 @@ body {
     border-radius: 15px;
     }
 
+#chart-input-area {
+    height: 600px;
+}
+
 table {
     background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
     
@@ -129,7 +133,20 @@ h4 {
 
 /* media queries*/
 
-@media screen and (max-width: 851px) {
+@media screen and (max-width: 555px) {
+    .input-area {
+        width: 470px;
+    }
+}
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 851px) {
     #chart-input-area {
         height:640px;
     }
@@ -187,5 +204,5 @@ h1 {
 
 /*media queries for chart*/
 
- 
+  */
 

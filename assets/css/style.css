@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Montserrat:wght@300&family=Smooch+Sans:wght@500&display=swap');
+
 
 
 body {
     background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
-    /* font-family: Smooch sans; */
 } 
 
 .input-area {
@@ -23,6 +22,7 @@ table {
 h1 {
     padding-top: 20px;
     letter-spacing: 8px;
+      
 }
 
 .input-btn {
@@ -65,15 +65,8 @@ table {
     margin: 5px;
 }
 
-/* #chart-wrapper {
-    border-radius: 15px;
-    width: 75%;
-    margin: auto;
-    height: 150px  
-} */
-
 #chart {
-    width: 75%;
+    width: 80%;
     margin: auto;
     padding: 10px 20px 10px 20px;  
 }
@@ -142,6 +135,12 @@ h4 {
     }
 }
 
+@media screen and (max-width: 630px) {
+    #chart-btn-div {
+        width: 140px;
+    }
+}
+
 @media screen and (max-width: 627px) {
 #calculate-div {
     width:165px;
@@ -184,8 +183,9 @@ h1 {
     .input-area {
         height: 655px;
     }  
-} 
+}
 
+/*media queries for chart*/
 
  
 

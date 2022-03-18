@@ -78,7 +78,6 @@ table {
     padding: 10px 20px 10px 20px;  
 }
 
-
 p {
     padding: 0;
 }
@@ -149,22 +148,31 @@ h4 {
  }
 }
 
-@media screen and (max-width: 508px) {
-    #total-and-remaining{
-        width:180px;
-     }
-     .link-div {
-         width: 60px;
-     }
+@media screen and (max-width: 545px) {
+    .input-area {
+        height: 660px;
     }
     
+    }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 508px) {
+#total-and-remaining{
+        width:180px;
+}
+
+h1 {
+    letter-spacing: 4px;
+}
+
+.link-div {
+         width: 60px;
+}
+
 .input-area {
-    height: 600px;
-}
+    width: 200px;
 
-}
+ }
+    
 
 @media screen and (max-width: 377px) {
     .input-area {

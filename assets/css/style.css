@@ -6,7 +6,7 @@ body {
     /* font-family: Smooch sans; */
 } 
 
-.app-area {
+.input-area {
     background: radial-gradient(circle, rgba(63,94,251,0.7516048655790442) 0%, rgba(70,248,252,0.9700922605370274) 100%); 
     width: 75%;
     height: 540px;
@@ -53,6 +53,26 @@ table {
     padding: 15px 5px 15px 5px;
 }
 
+#chart-btn-div {
+    width: 35%; 
+    margin: 20px auto;
+    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
+    border-radius: 15px;
+    padding: 15px 5px 15px 5px;
+}
+
+.chart-btn {
+    margin: 5px;
+}
+
+
+#chart {
+    width: 75%;
+    margin: auto;
+    padding: 10px 20px 10px 20px;  
+}
+
+
 p {
     padding: 0;
 }
@@ -92,10 +112,4 @@ h4 {
 
 
  
-/*
-#chart {
-    width: 40%;
-    padding: 10px 20px 10px 20px;
-    display: inline-block;   
-}
-*/
+

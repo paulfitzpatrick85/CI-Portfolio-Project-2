@@ -108,6 +108,7 @@ function totalFat() {
        'title':'Popular maintenance macro ratio',
     //    'width':550,
     //    'height':400
+    
     };
 
     // Instantiate and draw the chart.

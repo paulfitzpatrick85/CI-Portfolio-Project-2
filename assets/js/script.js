@@ -106,9 +106,7 @@ function totalFat() {
     // Set chart options
     var options = {
        'title':'Popular maintenance macro ratio',
-    //    'width':550,
-    //    'height':400
-    
+       backgroundColor: '#CE9FFF',
     };
 
     // Instantiate and draw the chart.
@@ -133,12 +131,9 @@ function totalFat() {
     // Set chart options
     var options = {
        'title':'Popular cutting macro ratio',
-       
-    }
+        backgroundColor: '#CE9FFF',
+    };
 
-    chartArea: {
-           backgroundColor: 'rgba(63,94,251,0.7516048655790442)'
-         }
 
     // Instantiate and draw the chart.
     var chart = new google.visualization.PieChart(document.getElementById('chart'));
@@ -162,8 +157,7 @@ function totalFat() {
     // Set chart options
     var options = {
        'title':'Popular bulking macro ratio',
-    //    'width':550,
-    //    'height':400
+       backgroundColor: '#CE9FFF',
     };
 
     // Instantiate and draw the chart.

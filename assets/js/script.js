@@ -82,7 +82,6 @@ function totalFat() {
     //       } else {
     //         remCals.innerText = calGoal - calValue;
     //    }
-       
         
       
    }
@@ -106,7 +105,7 @@ function totalFat() {
     // Set chart options
     var options = {
        'title':'Popular maintenance macro ratio',
-       backgroundColor: '#CE9FFF',
+       backgroundColor: '#7E77DB',
     };
 
     // Instantiate and draw the chart.
@@ -131,7 +130,7 @@ function totalFat() {
     // Set chart options
     var options = {
        'title':'Popular cutting macro ratio',
-        backgroundColor: '#CE9FFF',
+        backgroundColor: '#7E77DB',
     };
 
 
@@ -157,7 +156,7 @@ function totalFat() {
     // Set chart options
     var options = {
        'title':'Popular bulking macro ratio',
-       backgroundColor: '#CE9FFF',
+       backgroundColor: '#7E77DB',
     };
 
     // Instantiate and draw the chart.

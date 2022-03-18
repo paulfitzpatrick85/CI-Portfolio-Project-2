@@ -65,6 +65,10 @@ table {
     padding: 15px 5px 15px 5px;
 }
 
+.hide-br {
+    display: none;
+}
+
 .chart-btn {
     margin: 5px;
 }
@@ -139,6 +143,43 @@ h4 {
     }
 }
 
+@media screen and (max-width: 482px) {
+    .input-area {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .input-area {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 353px) {
+    .input-area {
+        width: 300px;
+        height: 620px;
+    }
+.hide-br {
+    display:inline;
+  }
+}
+
+@media screen and (max-width: 353px) {
+    #chart-input-area {
+        height: 680px;
+    }
+}
+
+@media screen and (max-width: 663px) {
+    #calculate-div {
+        width: 160px;
+    }
+}
+
+.link-div {
+width: 70px;
+}
 
 
 
@@ -204,5 +245,5 @@ h1 {
 
 /*media queries for chart*/
 
-  */
+  
 

@@ -9,7 +9,7 @@ body {
 .input-area {
     background: radial-gradient(circle, rgba(63,94,251,0.7516048655790442) 0%, rgba(70,248,252,0.9700922605370274) 100%); 
     width: 75%;
-    height: 540px;
+    height: 570px;
     text-align: center;
     margin: auto;
     border-radius: 15px;
@@ -73,7 +73,7 @@ table {
 }
 
 #chart {
-    width: 75%;
+    width: 66%;
     margin: auto;
     padding: 10px 20px 10px 20px;  
 }
@@ -125,16 +125,23 @@ h4 {
 }
 
 #link {
-    border: solid black;
+    border: solid #484B4D;
 }
-/* a {
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
+
+
+/* media queries*/
+/* 
+@media screen and (max-width: 545px) {
+.input-area {
+    height: 590px;
+}
+
+}
+
+@media screen and (max-width: 377px) {
+    .input-area {
+        height: 635px;
+    }  
 } */
 
 

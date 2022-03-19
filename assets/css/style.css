@@ -158,10 +158,14 @@ h4 {
 @media screen and (max-width: 353px) {
     .input-area {
         width: 300px;
-        height: 620px;
+        height: 650px;
     }
 .hide-br {
     display:inline;
+  }
+
+  #chart-input-area {
+    height: 650px;
   }
 }
 

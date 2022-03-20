@@ -2,14 +2,16 @@ function goal() {
     var calGoal = prompt ("Enter the number of calories you want to set as a target for each day.");
     if (isNaN(calGoal))
         {
-         alert ("Sorry! " + calGoal + " isn't a number!, please refresh the page and try again!" );
+         alert ("Sorry! " + calGoal + " isn't a number! Please refresh the page and try again!" );
+         document.getElementById("tar-cals").innerText = "Target Not Set!";
         } else if(calGoal) {
             alert ("Great! let's help keep within " + calGoal + " calories!");
+            document.getElementById("tar-cals").innerText = calGoal;
         }
         else {
         return;
     }
-    document.getElementById("tar-cals").innerText = calGoal;
+    
 }
 
 //functions to add and subtract users clicked input
@@ -92,13 +94,18 @@ function totalFat() {
    }
 
    function calsLeft() {
+
+    if (isNaN(document.getElementById("tar-cals").innerText)) {
+        document.getElementById("rem-cals").innerText = "Target Not Set!";
+    } else {
     let remValue = document.getElementById("rem-cals");
     let targetCals = parseInt(document.getElementById("tar-cals").innerText);  
     let calTotal = parseInt(document.getElementById("cal-total").innerText);
-    // let calTotal = parseInt(document.getElementById("cal-total").innerText);                                  
-    
-    
     remValue.innerText = targetCals - calTotal;
+    }                          
+    
+    
+    
    }
 
    

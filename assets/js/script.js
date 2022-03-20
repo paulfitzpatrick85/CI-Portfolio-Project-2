@@ -66,10 +66,11 @@ function totalFat() {
    //function to calculate total calories from users given inputs
 
    function totalCal() {
-
     let addProtein = parseInt(document.getElementById('add-protein').value);
+    let addCarb = parseInt(document.getElementById('add-carb').value);
+    let addFat = parseInt(document.getElementById('add-fat').value);
     
-    if (addProtein >= 1) {
+    if ((addProtein >= 1) && (addCarb >= 1) && (addFat >= 1)) {
     let proTotal = parseInt(document.getElementById("pro-total").innerText);
     let carbTotal = parseInt(document.getElementById("carb-total").innerText);
     let fatTotal = parseInt(document.getElementById("fat-total").innerText);
@@ -77,7 +78,7 @@ function totalFat() {
        let calTotal = parseInt(document.getElementById("cal-total").innerText);
         calValue.innerText = calTotal + (proTotal * 4) + (carbTotal * 4) + (fatTotal * 9);
     } else {
-        alert("have you entered macrp p?");
+        alert("You need to add inputs for Protein, Carbs and Fat!!");
     }
 
     

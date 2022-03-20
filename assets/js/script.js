@@ -2,7 +2,7 @@ function goal() {
     var calGoal = prompt ("Enter the number of calories you want to set as a target for each day.");
     if (isNaN(calGoal))
         {
-         alert ("Sorry! " + calGoal + " isn't a number now is it???");
+         alert ("Sorry! " + calGoal + " isn't a number!, please refresh the page and try again!" );
         } else if(calGoal) {
             alert ("Great! let's help keep within " + calGoal + " calories!");
         }
@@ -77,14 +77,19 @@ function totalFat() {
        let calValue = document.getElementById("cal-total");
        let calTotal = parseInt(document.getElementById("cal-total").innerText);
         calValue.innerText = calTotal + (proTotal * 4) + (carbTotal * 4) + (fatTotal * 9);
+         
     } else {
         alert("You need to add inputs for Protein, Carbs and Fat!!");
     }
-
-    
-      
    }
 
+   /*clear inputs on clicking calculate Total Calories*/
+   function clearInput() {
+     document.getElementById("add-protein").value = "0";
+     document.getElementById("add-carb").value = "0";
+     document.getElementById("add-fat").value = "0";
+
+   }
 
    //pie chart functions
 

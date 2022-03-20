@@ -9,6 +9,7 @@ function goal() {
             document.getElementById("tar-cals").innerText = calGoal;
         }
         else {
+            document.getElementById("tar-cals").innerText = "Target Not Set!";
         return;
     }
     

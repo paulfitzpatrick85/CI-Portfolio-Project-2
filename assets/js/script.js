@@ -91,6 +91,18 @@ function totalFat() {
 
    }
 
+   function calsLeft() {
+    let remValue = document.getElementById("rem-cals");
+    let targetCals = parseInt(document.getElementById("tar-cals").innerText);  
+    let calTotal = parseInt(document.getElementById("cal-total").innerText);
+    // let calTotal = parseInt(document.getElementById("cal-total").innerText);                                  
+    
+    
+    remValue.innerText = targetCals - calTotal;
+   }
+
+   
+
    //pie chart functions
 
    //onload chart

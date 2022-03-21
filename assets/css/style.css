@@ -153,7 +153,11 @@ h4 {
 @media screen and (max-width: 414px) {
     .input-area {
         width: 340px;
-    }
+}
+.hide-br {
+    display:inline;
+  }
+
 }
 
 @media screen and (max-width: 353px) {
@@ -161,9 +165,7 @@ h4 {
         width: 300px;
         height: 690px;
     }
-.hide-br {
-    display:inline;
-  }
+
 
   #chart-input-area {
     height: 650px;

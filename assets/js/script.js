@@ -1,3 +1,5 @@
+//onload alert
+
 function goal() {
     var calGoal = prompt ("Enter the number of calories you want to set as a target for each day.");
     if (isNaN(calGoal))
@@ -15,7 +17,8 @@ function goal() {
     
 }
 
-//functions to add and subtract users clicked input
+//functions for add and subtract buttons 
+
 function addP() {
     document.getElementById('add-protein').value++;
 }
@@ -42,7 +45,7 @@ function subF() {
 
 
 
-// functions to add to totals
+// functions to add input field figures to totals
 
 function totalProtein() {     
     let proValue = document.getElementById("pro-total");                                    
@@ -81,7 +84,7 @@ function totalFat() {
        let calTotal = parseInt(document.getElementById("cal-total").innerText);
         calValue.innerText = calTotal + (proTotal * 4) + (carbTotal * 4) + (fatTotal * 9);
          
-        //if two out of three inputs are 'added' the calculate total calories will not work, inputs are still added to 'totals', the code below prevents this
+        //if two out of three inputs are added, the calculate total calories will not work, inputs are still added to 'totals', the code below prevents this
     } else {
         alert("You need to add inputs for Protein, Carbs and Fat!!");
         document.getElementById("pro-total").innerText = parseInt(document.getElementById("pro-total").innerText) - parseInt(document.getElementById('add-protein').value);
@@ -90,7 +93,7 @@ function totalFat() {
     }
    }
 
-   /*clear inputs on clicking calculate Total Calories*/
+   //clear inputs on clicking calculate Total Calories
    function clearInput() {
      document.getElementById("add-protein").value = "0";
      document.getElementById("add-carb").value = "0";
@@ -98,6 +101,7 @@ function totalFat() {
 
    }
 
+   //subtract total calories from target calories, if target alert is not answered correctly, equation is not done
    function calsLeft() {
 
     if (isNaN(document.getElementById("tar-cals").innerText)) {

@@ -81,8 +81,12 @@ function totalFat() {
        let calTotal = parseInt(document.getElementById("cal-total").innerText);
         calValue.innerText = calTotal + (proTotal * 4) + (carbTotal * 4) + (fatTotal * 9);
          
+        //if two out of three inputs are 'added' the calculate total calories will not work, inputs are still added to 'totals', the code below prevents this
     } else {
         alert("You need to add inputs for Protein, Carbs and Fat!!");
+        document.getElementById("pro-total").innerText = parseInt(document.getElementById("pro-total").innerText) - parseInt(document.getElementById('add-protein').value);
+        document.getElementById("carb-total").innerText = parseInt(document.getElementById("carb-total").innerText) - parseInt(document.getElementById('add-carb').value);
+        document.getElementById("fat-total").innerText = parseInt(document.getElementById("fat-total").innerText) - parseInt(document.getElementById('add-fat').value);
     }
    }
 

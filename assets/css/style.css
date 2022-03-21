@@ -41,8 +41,9 @@ table {
     height: 150px
 }
 
+
 #total-and-remaining {
-    width: 50%; 
+    width: 35%; 
     margin: 20px auto;
     background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
     border-radius: 15px;
@@ -50,7 +51,7 @@ table {
 } 
 
 #calculate-div {
-    width: 35%; 
+    width: 50%; 
     margin: 20px auto;
     background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
     border-radius: 15px;

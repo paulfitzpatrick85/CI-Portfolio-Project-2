@@ -70,12 +70,20 @@ function totalFat() {
        
 
    //function to calculate total calories from users given inputs
+   
+   
+      
+//    function a() {
+//     let b = document.getElementById('total-p').clicked === false;
+
+//     if(b === true) {
+   
 
    function totalCal() {
     let addProtein = parseInt(document.getElementById('add-protein').value);
     let addCarb = parseInt(document.getElementById('add-carb').value);
     let addFat = parseInt(document.getElementById('add-fat').value);
-    
+
     if ((addProtein >= 1) && (addCarb >= 1) && (addFat >= 1)) {
     let proTotal = parseInt(document.getElementById("pro-total").innerText);
     let carbTotal = parseInt(document.getElementById("carb-total").innerText);
@@ -91,7 +99,12 @@ function totalFat() {
         document.getElementById("carb-total").innerText = parseInt(document.getElementById("carb-total").innerText) - parseInt(document.getElementById('add-carb').value);
         document.getElementById("fat-total").innerText = parseInt(document.getElementById("fat-total").innerText) - parseInt(document.getElementById('add-fat').value);
     }
-   }
+} 
+
+    // } else {
+    //     ("click add");
+    // }
+
 
    //clear inputs on clicking calculate Total Calories
    function clearInput() {

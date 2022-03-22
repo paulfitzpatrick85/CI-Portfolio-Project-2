@@ -22,8 +22,14 @@ table {
 
 h1 {
     padding-top: 20px;
-    letter-spacing: 8px;
-      
+    letter-spacing: 8px;      
+}
+
+.bold-text {
+    padding-top: 10px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+    font-weight: bolder;
 }
 
 .input-btn {
@@ -78,12 +84,12 @@ table {
 p {
     padding: 0;
 }
-
+/* 
 h4 {
     padding-top: 10px;
     padding: 5px 0px 5px 0px;
     margin: 0px;
-}
+} */
 
 .outputs {
     text-decoration: underline rgba(63,94,251,0.7516048655790442);

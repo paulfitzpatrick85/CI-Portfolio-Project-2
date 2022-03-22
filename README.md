@@ -1,6 +1,6 @@
-# Parents A.S.D Resources
+# Marco Tracker
 
-View the finished website here - https://paulfitzpatrick85.github.io/CI-Portfolio-Project-1/
+View the finished website here - https://paulfitzpatrick85.github.io/CI-Portfolio-Project-2/
 
 ## Who is this site for?
 
@@ -94,10 +94,9 @@ I deployed the website through github pages through the following steps:
 3. The woman and child image is from pexels.
 4. The visual schedule is taken from printablee.com
 
-- The html for the footer was taken from the love running project as a template and edited to suit this page, changes in padding and size for example.
+-
 
 ## media
-Links for the video and book in recommended section are taken from youtube.com and amazon.com respectively.
 
 
 

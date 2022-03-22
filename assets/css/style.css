@@ -24,6 +24,10 @@ h1 {
     padding-top: 20px;
     letter-spacing: 8px;      
 }
+label {
+    font-weight: bolder;
+   
+}
 
 .bold-text {
     padding-top: 10px;

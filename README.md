@@ -4,19 +4,27 @@ View the finished website here - https://paulfitzpatrick85.github.io/CI-Portfoli
 
 ## Who is this site for?
 
-The Parents A.S.D Resources website is intended as a source of clear and practical information for parents of children recently diagnosed with autism spectrum disorder, namely what they can do themselves for their children in the interim of waiting times for state provided and private services.
-![Screenshot (114)](https://user-images.githubusercontent.com/55660566/154047759-2fc07626-b5f5-4696-aefc-cd1a074fd544.png)
+The function of the Macro Tracker web app, is to allow a user to manually enter and keep track of they're daily macronutrient (protein, carbohydrate and fat) intake, and to also calculate the calories based on the macro's entered.
+While some calorie tracking app use a database of popular foods to choose from and add, these app's often lack less popular foods items such as foreign brand protein powders or foods/supplements only available in healths shops and not in the typical supermarket.
+
+
 
 ## User stories
 
-- As a user I want to be able to navigate clearly and easily throughout the website. 
-- As a user I want to learn about the approaches to teaching a child with ASD through casual and easy to understand langauge.
-- As a user I want to send a comment or tip in the signup form only if I wish to and not be 'required' to enter some text just to be able to submit the form/sign up for the newsletter.
+- As a user I want to be able to use the app for its intended purpose easily and without having to through any trail and error to figure it out.
+- As a user I want to I  want input a number of grams for each macro and have the overall totals of macro, total calories and remaining calories of my target to be calculated for me without out multiple click or inputting of data.
+- As a user I would like to see popular ways of breaking down of food intake in the form of ratios/percentages of how much of each macronutrient to consume.
 
 # Features
 
- ## Homepage.
-On the homepage, below the main image, users will find a brief introduction of the three catagories that the site addresses, which are elaborated on in the follow page. 
+ ## Main App Page.
+On loading the app, the user is greeted with an prompt welcoming them to the page and they are asked to enter the number of calories they want to set as a target to consume each day.
+
+When the user enters a number, an alert follows to say "Great! let us help keep you within (the number entered) calories!"
+The number entered is then displayed in 'Calorie Target'.
+If the user enters anything that is not a number in the prompt, an alert will follow that reads "Sorry! (text entered) isn't a number! Please refresh the page and try again!" The user has the choice to refresh the page or continue using the app, in which case 'Calorie Target' will diplay "Target Not Set!"
+ 
+ ### Inputting macros
 ![Screenshot (109)](https://user-images.githubusercontent.com/55660566/153726688-30f4e445-617b-4d63-be76-348f7e191830.png)
 
 ## Navagation.

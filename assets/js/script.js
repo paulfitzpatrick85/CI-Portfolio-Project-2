@@ -1,13 +1,13 @@
 //onload alert
 
 function goal() {
-    var calGoal = prompt ("Enter the number of calories you want to set as a target for each day.");
+    var calGoal = prompt ("Welcome to the Macro Tracker App.\r\n Please enter the number of calories you want to set as a target for each day.");
     if (isNaN(calGoal))
         {
          alert ("Sorry! " + calGoal + " isn't a number! Please refresh the page and try again!" );
          document.getElementById("tar-cals").innerText = "Target Not Set!";
         } else if(calGoal) {
-            alert ("Great! let's help keep within " + calGoal + " calories!");
+            alert ("Great! let us help keep you within " + calGoal + " calories!");
             document.getElementById("tar-cals").innerText = calGoal;
         }
         else {

@@ -5,7 +5,7 @@ body {
 .input-area {
     background: radial-gradient(circle, rgba(63,94,251,0.7516048655790442) 0%, rgba(70,248,252,0.9700922605370274) 100%); 
     width: 75%;
-    height: 640px;
+    height: 660px;
     text-align: center;
     margin: auto;
     border-radius: 15px;
@@ -88,12 +88,7 @@ table {
 p {
     padding: 0;
 }
-/* 
-h4 {
-    padding-top: 10px;
-    padding: 5px 0px 5px 0px;
-    margin: 0px;
-} */
+
 
 .outputs {
     text-decoration: underline rgba(63,94,251,0.7516048655790442);
@@ -159,7 +154,7 @@ h4 {
 @media screen and (max-width: 414px) {
     .input-area {
         width: 340px;
-        height: 680px;
+        height: 700px;
 }
 .hide-br {
     display:inline;

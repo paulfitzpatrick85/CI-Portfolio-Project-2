@@ -67,16 +67,6 @@ function totalFat() {
     let addFat = parseInt(document.getElementById('add-fat').value);
     fatValue.innerText = fatTotal + addFat;
 }
-       
-
-   //function to calculate total calories from users given inputs
-   
-   
-      
-//    function a() {
-//     let b = document.getElementById('total-p').clicked === false;
-
-//     if(b === true) {
    
 
    function totalCal() {
@@ -92,7 +82,7 @@ function totalFat() {
        let calTotal = parseInt(document.getElementById("cal-total").innerText);
         calValue.innerText = calTotal + (proTotal * 4) + (carbTotal * 4) + (fatTotal * 9);
          
-        //if two out of three inputs are added, the calculate total calories will not work, inputs are still added to 'totals', the code below prevents this
+        //if all three inputs fields not are input with the '+' or '-' buttons, the calculate total calories will not work, but inputs are still added to 'totals', the code below prevents this
     } else {
         alert("You need to add inputs for Protein, Carbs and Fat!!");
         document.getElementById("pro-total").innerText = parseInt(document.getElementById("pro-total").innerText) - parseInt(document.getElementById('add-protein').value);
@@ -101,10 +91,7 @@ function totalFat() {
     }
 } 
 
-    // } else {
-    //     ("click add");
-    // }
-
+    
 
    //clear inputs on clicking calculate Total Calories
    function clearInput() {
@@ -159,6 +146,7 @@ function totalFat() {
  }
  google.charts.setOnLoadCallback(maintenance);
 
+
  //onclick cut chart 
 
  function cut() {
@@ -184,6 +172,7 @@ function totalFat() {
     chart.draw(data, options);
  }
  google.charts.Callback(cut);
+
 
  //onclick bulk chart
 

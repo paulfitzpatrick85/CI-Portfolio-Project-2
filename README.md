@@ -7,7 +7,8 @@ View the finished website here - https://paulfitzpatrick85.github.io/CI-Portfoli
 The function of the Macro Tracker web app, is to allow a user to manually enter and keep track of their daily macronutrient (protein, carbohydrate and fat) intake, and to also calculate the calories based on the macro's entered.
 While some calorie tracking app use a database of popular foods to choose from and add, these app's often lack less popular foods items such as foreign brand protein powders or foods/supplements only available in healths shops and not in the typical supermarket.
 
-![homepage](https://user-images.githubusercontent.com/55660566/159675314-7c29a4d8-b137-45fa-969c-284aa95ce3e7.png)
+![amIResponsive](https://user-images.githubusercontent.com/55660566/159682173-45369723-3459-4d11-b484-5c038d0205f9.png)
+
 
 
 ## User stories
@@ -18,17 +19,39 @@ While some calorie tracking app use a database of popular foods to choose from a
 
 # Features
 
- ## Main App Page.
-On loading the app, the user is greeted with an prompt welcoming them to the page and they are asked to enter the number of calories they want to set as a target to consume each day.
+ ## Main Page - Welcome and Data Entry Prompt.
+On loading the app, the user is greeted with a prompt welcoming them to the page and they are asked to enter the number of calories they want to set as a target to consume each day.
 
 When the user enters a number, an alert follows to say "Great! let us help keep you within (number entered) calories!"
 The number entered is then displayed in 'Calorie Target'.
 
- ![initialPrompt](https://user-images.githubusercontent.com/55660566/159675785-0208d4be-4998-4b7d-99a3-f6555154c0a4.png)
- ![NaNmessage](https://user-images.githubusercontent.com/55660566/159676223-60a54bbf-4f9a-4d0b-9c28-7b37eedeaef0.png)
+ ![initialPrompt](https://user-images.githubusercontent.com/55660566/159681041-110da584-db52-463a-adcd-6be349d8f791.png)
+ ![numberEnteredCorrect](https://user-images.githubusercontent.com/55660566/159681060-4fa41e35-c7cc-48c9-bfa9-0b07fac62f58.png)
+ ![targetDisplayed](https://user-images.githubusercontent.com/55660566/159681072-17959e7d-94dc-42ed-a580-d4a2ebfe201d.png)
  
+ If the user enters anything that is not a number in the prompt, an alert will follow that reads "Sorry! (text entered) isn't a number! Please refresh the page and try again!" The user has the choice to refresh the page or continue using the app, in which case 'Calorie Target' will diplay "Target Not Set!"
+
+ ![NaNmessage](https://user-images.githubusercontent.com/55660566/159678510-f90d00d4-f1ba-4118-a503-8e7ba8970477.png)
+![TargetNotSet1](https://user-images.githubusercontent.com/55660566/159679067-d9fc76ff-f230-4df2-8c23-287490e5582e.png)
  
- ### Inputting macros
+ ## Inputting Macros
+Once a user has entered their target calorie number and it has been displayed, they can then begin to input there required number of protein, carbs and fat using the plus or if needs be the minus buttons, which along with all other buttons on the page will enlarge when the mouse is hovering over it to show the user the anyway on the page with the same styling is a button.
+
+![inputtingMacros](https://user-images.githubusercontent.com/55660566/159685700-92ceb996-f60d-43f6-870a-1bbca6b58fde.png)
+
+The user is required to enter data for all fields.
+If one or more fields are left at zero and the user attempts to 'Calculate Totals Calories', an alert will be displayed request the user add inputs for all fields. Once the user clicks 'ok', the input fields are reset to zero.
+
+![alertEnterAllInputs](https://user-images.githubusercontent.com/55660566/159695081-9e1ddad1-77b4-4d81-ae22-3d12a8e83843.png)
+
+
+## Calculating Totals
+After all macros numbers are input, the user can navagate to the "Calculate Total Calories" button which when clicked will trigger the following functions at the one time.
+- Figures from the input fields are displayed in their corresponding 'Total grams' output. And on each subsequent click, once the user has input more numbers, the input numbers will be add to the current totals for protein, carbs and fat.  
+- The totals for protein, carbs and fat are calculated into calories using the formula : (protein total x 4)+(carb total x 4)+(fat total x 9) =  total calories. The result is then displayed in 'Calories Consumed'.
+- The current figure for 'Calories Consumed' is subtracted from the 'Calorie Target' set by the user. The Result of which is then displayed as 'Calories Remaining'. 
+
+![totalsCalculated](https://user-images.githubusercontent.com/55660566/159685718-34ddf491-3cc0-4478-a394-41f33cff8a66.png)
 
 ## Navagation.
 

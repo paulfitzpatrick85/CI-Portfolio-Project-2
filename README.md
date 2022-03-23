@@ -4,34 +4,37 @@ View the finished website here - https://paulfitzpatrick85.github.io/CI-Portfoli
 
 ## Who is this site for?
 
-The function of the Macro Tracker web app, is to allow a user to manually enter and keep track of they're daily macronutrient (protein, carbohydrate and fat) intake, and to also calculate the calories based on the macro's entered.
+The function of the Macro Tracker web app, is to allow a user to manually enter and keep track of their daily macronutrient (protein, carbohydrate and fat) intake, and to also calculate the calories based on the macro's entered.
 While some calorie tracking app use a database of popular foods to choose from and add, these app's often lack less popular foods items such as foreign brand protein powders or foods/supplements only available in healths shops and not in the typical supermarket.
 
+![homepage](https://user-images.githubusercontent.com/55660566/159675314-7c29a4d8-b137-45fa-969c-284aa95ce3e7.png)
 
 
 ## User stories
 
 - As a user I want to be able to use the app for its intended purpose easily and without having to through any trail and error to figure it out.
 - As a user I want to I  want input a number of grams for each macro and have the overall totals of macro, total calories and remaining calories of my target to be calculated for me without out multiple click or inputting of data.
-- As a user I would like to see popular ways of breaking down of food intake in the form of ratios/percentages of how much of each macronutrient to consume.
+- As a user I would like to see popular ways of breaking down of food intake in the form of charts with percentages representative of how much of each macronutrient to consume.
 
 # Features
 
  ## Main App Page.
 On loading the app, the user is greeted with an prompt welcoming them to the page and they are asked to enter the number of calories they want to set as a target to consume each day.
 
-When the user enters a number, an alert follows to say "Great! let us help keep you within (the number entered) calories!"
+When the user enters a number, an alert follows to say "Great! let us help keep you within (number entered) calories!"
 The number entered is then displayed in 'Calorie Target'.
-If the user enters anything that is not a number in the prompt, an alert will follow that reads "Sorry! (text entered) isn't a number! Please refresh the page and try again!" The user has the choice to refresh the page or continue using the app, in which case 'Calorie Target' will diplay "Target Not Set!"
+
+ ![initialPrompt](https://user-images.githubusercontent.com/55660566/159675785-0208d4be-4998-4b7d-99a3-f6555154c0a4.png)
+ ![NaNmessage](https://user-images.githubusercontent.com/55660566/159676223-60a54bbf-4f9a-4d0b-9c28-7b37eedeaef0.png)
+ 
  
  ### Inputting macros
-![Screenshot (109)](https://user-images.githubusercontent.com/55660566/153726688-30f4e445-617b-4d63-be76-348f7e191830.png)
 
 ## Navagation.
 
 At the top of all three pages, users will find links to the home, resources and signup pages, along with an underline indicating which page the user is currently on. The example below showing the menu responive at 325px. 
 
-![Screenshot (109)](https://user-images.githubusercontent.com/55660566/154048008-963b9ea7-cf94-414a-9eb0-db6ba69aa3c8.png)
+
 
 
 ## Theme.
@@ -48,8 +51,6 @@ The main idea behind this website is that the ideas outlined are shortlisted fro
 The layout for large screens is made to appear as four blocks, with the text and images of each section diagonal from one another.
 And as this would not work on smaller screens, the order of the sections were reversed to appear as text/image/text/image as the user scrolls down the screen. 
 - The second section shows what items can be used for what purposes and also includes a link to an external website for a parents course in communication called "Hanen:more than words".
-![Screenshot (121)](https://user-images.githubusercontent.com/55660566/154048599-f12443bd-884d-4c6e-925e-efca9724a3f2.png)
-![Screenshot (123)](https://user-images.githubusercontent.com/55660566/154049079-9a6b70ed-3c5c-4039-ab84-a7f041bac4e7.png)
 
 
 
@@ -58,8 +59,7 @@ This section contains two embedded links.
 1. Ted Talk video from youtube.
 2. A book from amazon.
 With it being stated on the homepage that these recommendations change weekly and monthly, with the idea of obviously trying to help the user, but also ensure users return to the site regulary.
- ![Screenshot (119)](https://user-images.githubusercontent.com/55660566/154045271-3b5ebb33-1aa0-429d-9185-b407c5473254.png)
-
+ 
 ## Signup form
 
 A page were users can signup for a newsletter, enter details that the site owner can use to better understand the users situation (childs age, how often they attend services), and also a text area to submit comments and tips etc for the site to make its list for the resources page.

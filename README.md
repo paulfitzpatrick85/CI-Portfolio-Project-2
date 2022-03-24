@@ -72,7 +72,7 @@ This was thought to be a bug until the effect of the refresh was pointed out to 
 
 - I tested my html on the w3c vaildator and my css on jigsaw and found all code to be ok. 
 
-- I confirmed that the signup form cannot be submitted without a name, correctly input email and at least one checkbox being ticked in the radio btton sections. 
+- I tested my JavaScript on the jshint vaildator
 
 - I tested the all links work correctly in the navagtion menu, the social media links, and the links to external pages on the resources page like amazon.com and hanen.org 
 

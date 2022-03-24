@@ -63,22 +63,26 @@ Clicking on each of the three button will call a function to display a different
 
 Below the chart buttons is the "Back to App" link, which will bring the user back to the home page of the app.
 
-
-
 ## Testing section
-- I tested and confirmed that the app displays correctly accross multipe screen sizes from large monitors to laptop, tablet and small smartphones (down to 325px).
+- I tested and confirmed that the app displays correctly across all screen sizes from large monitors, laptop, tablet and small smartphones (down to 325px).
 The charts display perfect upon loading to any screen, but as a note, when viewing the charts in dev tools and minimising the screen down in width the charts will stay the same size until the page is refreshed.
 This was thought to be a bug until the effect of the refresh was pointed out to me by my mentor.
 
-- I tested my html on the w3c vaildator and my css on jigsaw and found all code to be ok. 
+- I tested my html on the w3c vaildator and my css on jigsaw and found all code to be ok with no errors. 
+//////////html css pic////////////////
 
-- I tested my JavaScript on the jshint vaildator
+- I tested my JavaScript on the jshint vaildator and returned no significant issues. all warnings and issues where discussed we my mentor who assured me the issues where not significant, and also my tutor was happy as long as everything worked as intended.
+The warnings where as follows:
+- for each instance let is used :'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+- 13 unused variables: jshint then lists all functions used, not variables.
+- One undefined variable : 'google' as used in the code block for each chart, again I was assured this was not a significant issue.
+////////////jshint pic///////////////////////
 
-- I tested the all links work correctly in the navagtion menu, the social media links, and the links to external pages on the resources page like amazon.com and hanen.org 
+- I tested that the link  on each page works correctly.
 
 - I tested the sites accessibility through lighthouse, the image below showing the results.
 
-![Screenshot (118)](https://user-images.githubusercontent.com/55660566/154043336-24e31cfd-9f54-4622-843a-fb0eecc24a54.png)
+//////////////lighthouse pic/////////////////////////
 
 ### User story testing
 - The navigation menu is very minimalistic across all pages and also maintains its centre position across all screen sizes for ease of use and familiarity across devices.
@@ -97,17 +101,8 @@ I deployed the website through github pages through the following steps:
 - From my project repository I then navigated to the settings tab to find the github pages section where in the source section I selected main branch from the drop down menu and selected save, a link was then created for the published site.
 
 ## credits
-- The main image on the home page and the 'born to stand out' image on the resources page are taken from pexels.
-- The collage image on the resources page was made using images from different sources: 
-1. The shape sorting toy image, top right is taken from fruugo.ie.  
-2. The peg board image, bottom left, is taken from amazon.com.
-3. The woman and child image is from pexels.
-4. The visual schedule is taken from printablee.com
-
--
-
-## media
-
+- The code block for the charts where taken from google charts examples and the information adapted to suit the needs of the app.
+ Codetaken from this webpage https://www.tutorialspoint.com/googlecharts/googlecharts_pie_basic.htm 
 
 
 notes
@@ -115,5 +110,3 @@ notes
 bugs
 function totalal-- could not access variables in another function declared with var so had to copy and paste into function again
 
-##credits
-https://www.tutorialspoint.com/googlecharts/googlecharts_pie_basic.htm for pie charts

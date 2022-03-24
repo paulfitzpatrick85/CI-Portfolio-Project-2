@@ -1,7 +1,7 @@
 //onload alert
 
 function goal() {
-    var calGoal = prompt ("Welcome to the Macro Tracker App.\r\n Please enter the number of calories you want to set as a target for each day.");
+    let calGoal = prompt ("Welcome to the Macro Tracker App.\r\n Please enter the number of calories you want to set as a target for each day.");
     if (isNaN(calGoal))
         {
          alert ("Sorry! " + calGoal + " isn't a number! Please refresh the page and try again!" );

@@ -87,7 +87,7 @@ table {
 
 #chart {
     width: 80%;
-    margin: auto;   
+    margin: auto;  
 }
 
 p {
@@ -156,11 +156,12 @@ p {
         width: 400px;
     }
 }
-/*extra height in case 'target not set' text appears*/
+/*extra height added if 'target not set' text appears in
+ 'calories ramaining' & 'calorie target', ensure link stays in input-area*/
 @media screen and (max-width: 414px) {
     .input-area {
         width: 340px;
-        height: 700px;
+        height: 750px;
 }
 .hide-br {
     display:inline;
@@ -171,22 +172,16 @@ p {
 @media screen and (max-width: 353px) {
     .input-area {
         width: 300px;
-        height: 690px;
+        height: 760px;
     }
-
-
+  
   #chart-input-area {
     height: 650px;
   }
-}
 
-@media screen and (max-width: 353px) {
-    #chart-input-area {
-        height: 630px;
-    }
-    .input-area {
-        height: 735px;
-    }
+  #chart-input-area {
+    height: 630px;
+}
 }
 
 @media screen and (max-width: 663px) {

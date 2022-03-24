@@ -129,9 +129,9 @@ function totalFat() {
     data.addColumn('string', 'Browser');
     data.addColumn('number', 'Percentage');
     data.addRows([
-       ['Protein', 40],
-       ['Carbohydrates', 40],
-       ['Fat', 20]
+       ['Protein', 50],
+       ['Carbohydrates', 35],
+       ['Fat', 15]
        ]);
        
     // Set chart options
@@ -156,8 +156,8 @@ function totalFat() {
     data.addColumn('number', 'Percentage');
     data.addRows([
        ['Protein', 60],
-       ['Carbohydrates', 20],
-       ['Fat', 20]
+       ['Carbohydrates', 15],
+       ['Fat', 25]
      ]);
        
     // Set chart options
@@ -182,8 +182,8 @@ function totalFat() {
     data.addColumn('string', 'Browser');
     data.addColumn('number', 'Percentage');
     data.addRows([
-       ['Protein', 50],
-        ['Carbohydrates', 30], 
+       ['Protein', 40],
+        ['Carbohydrates', 40], 
        ['Fat', 20],
      ]);
        

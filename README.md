@@ -47,7 +47,7 @@ If one or more fields are left at zero and the user attempts to 'Calculate Total
 
 ## Calculating Totals
 After all macros numbers are input, the user can navagate to the "Calculate Total Calories" button which when clicked will trigger the following functions at the one time.
-- Figures from the input fields are displayed in their corresponding 'Total grams' output. And on each subsequent click, once the user has input more numbers, the input numbers will be add to the current totals for protein, carbs and fat.  
+- Figures from the input fields are displayed in their corresponding 'Total grams' output. And on each subsequent click, once the user has input more numbers, the input numbers will be added to the current totals for protein, carbs and fat.  
 - The totals for protein, carbs and fat are calculated into calories using the formula : (protein total x 4)+(carb total x 4)+(fat total x 9) =  total calories. The result is then displayed in 'Calories Consumed'.
 - The current figure for 'Calories Consumed' is subtracted from the 'Calorie Target' set by the user. The Result of which is then displayed as 'Calories Remaining'. 
 
@@ -55,41 +55,20 @@ After all macros numbers are input, the user can navagate to the "Calculate Tota
 
 ## Navagation.
 
-At the top of all three pages, users will find links to the home, resources and signup pages, along with an underline indicating which page the user is currently on. The example below showing the menu responive at 325px. 
+The web app is made up of two pages. At the bottom of each page is a link styled to look like the other button. On the home page this link brings the user to the second page, where three charts are displayed representing popular percentages of macro intake for the different phases of bodybuilding, using the terminology known to people interested in the subject: cutting(fat loss) , maintenance(staying as you are), and bulking(building muscle mass).
+Clicking on each of the three button will call a function to display a different chart.
+
+![chartPic](https://user-images.githubusercontent.com/55660566/159893401-ae27ed84-f9f9-4a66-bf01-07c65e585ada.png)
+![chartPic2](https://user-images.githubusercontent.com/55660566/159893712-638b6c0e-ac78-45ae-bfce-8a97bd7f4ec7.png)
+
+Below the chart buttons is the "Back to App" link, which will bring the user back to the home page of the app.
 
 
-
-
-## Theme.
-The color scheme of the header, footer and body where chosen to work around and play off the main hero image of the home page, and maintain the positive feel of the home page image throughout the pages that follow it.
-
-## Footer
-At the bottom of each page, the footer has social media icons linking to each sites homepage (as this is a ficitous site with without actual social media profiles).
-
-
-## 'What you can do' and 'What you can use' sections.
-The main idea behind this website is that the ideas outlined are shortlisted from other users (as in other parents that have used the site or from the related social media sites) submitted recommendations.
-- The first section being what the users/parents can do to by themselves ie, educate themselves in the topic of ASD and also the mindset to approach the topic.
-
-The layout for large screens is made to appear as four blocks, with the text and images of each section diagonal from one another.
-And as this would not work on smaller screens, the order of the sections were reversed to appear as text/image/text/image as the user scrolls down the screen. 
-- The second section shows what items can be used for what purposes and also includes a link to an external website for a parents course in communication called "Hanen:more than words".
-
-
-
-## Recommened section.
-This section contains two embedded links. 
-1. Ted Talk video from youtube.
-2. A book from amazon.
-With it being stated on the homepage that these recommendations change weekly and monthly, with the idea of obviously trying to help the user, but also ensure users return to the site regulary.
- 
-## Signup form
-
-A page were users can signup for a newsletter, enter details that the site owner can use to better understand the users situation (childs age, how often they attend services), and also a text area to submit comments and tips etc for the site to make its list for the resources page.
-The form requires that the user fill in their name, email, childs age, and also the they click the appropriate button for have often they attend a service and where they heard of this website.
 
 ## Testing section
-- I tested and confirmed that the website displayed correctly accross multipe screen sizes from large monitors to laptop, tablet and small smartphones (as small as 325px), and also in different browsers including chrome, firefox and microsoft edge.
+- I tested and confirmed that the app displays correctly accross multipe screen sizes from large monitors to laptop, tablet and small smartphones (down to 325px).
+The charts display perfect upon loading to any screen, but as a note, when viewing the charts in dev tools and minimising the screen down in width the charts will stay the same size until the page is refreshed.
+This was thought to be a bug until the effect of the refresh was pointed out to me by my mentor.
 
 - I tested my html on the w3c vaildator and my css on jigsaw and found all code to be ok. 
 

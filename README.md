@@ -26,7 +26,9 @@ When the user enters a number, an alert follows to say "Great! let us help keep 
 The number entered is then displayed in 'Calorie Target'.
 
  ![initialPrompt](https://user-images.githubusercontent.com/55660566/159681041-110da584-db52-463a-adcd-6be349d8f791.png)
+
  ![numberEnteredCorrect](https://user-images.githubusercontent.com/55660566/159681060-4fa41e35-c7cc-48c9-bfa9-0b07fac62f58.png)
+
  ![targetDisplayed](https://user-images.githubusercontent.com/55660566/159681072-17959e7d-94dc-42ed-a580-d4a2ebfe201d.png)
  
  If the user enters anything that is not a number in the prompt, an alert will follow that reads "Sorry! (text entered) isn't a number! Please refresh the page and try again!" The user has the choice to refresh the page or continue using the app, in which case 'Calorie Target' will diplay "Target Not Set!"
@@ -68,45 +70,50 @@ Below the chart buttons is the "Back to App" link, which will bring the user bac
 The charts display perfect upon loading to any screen, but as a note, when viewing the charts in dev tools and minimising the screen down in width the charts will stay the same size until the page is refreshed.
 This was thought to be a bug until the effect of the refresh was pointed out to me by my mentor.
 
-- I tested my html on the w3c vaildator and my css on jigsaw and found all code to be ok with no errors. 
-//////////html css pic////////////////
+- I tested my html on the w3c vaildator and my css on jigsaw and found all code to be ok with no errors.
 
-- I tested my JavaScript on the jshint vaildator and returned no significant issues. all warnings and issues where discussed we my mentor who assured me the issues where not significant, and also my tutor was happy as long as everything worked as intended.
+![htmlValid](https://user-images.githubusercontent.com/55660566/160015555-342b6f9d-4f7d-46a5-a86d-42150f3b784f.png)
+![html2Valid](https://user-images.githubusercontent.com/55660566/160015568-d423cb6b-bc46-4f45-98a1-5e38d7bb692e.png)
+
+![cssValid](https://user-images.githubusercontent.com/55660566/160015588-748a53ce-5bfb-4a86-b607-39bc2b79261a.png)
+
+- I tested my JavaScript on the jshint vaildator and returned no significant issues. All warnings and issues where discussed we my mentor who assured me the issues where not significant, and also my tutor was happy as long as everything worked as intended.
 The warnings where as follows:
 - for each instance let is used :'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 - 13 unused variables: jshint then lists all functions used, not variables.
 - One undefined variable : 'google' as used in the code block for each chart, again I was assured this was not a significant issue.
-////////////jshint pic///////////////////////
+
+![jsValidLet](https://user-images.githubusercontent.com/55660566/160015950-8382d8b9-0830-4868-8364-4331d12c51c8.png)
+![jsValidUndefined](https://user-images.githubusercontent.com/55660566/160015961-ab6ee0d3-8518-4512-bbc2-111efe73f75b.png)
+![jsValidFunc](https://user-images.githubusercontent.com/55660566/160016133-c9321fcf-3168-4734-92b9-2002c26caa90.png)
 
 - I tested that the link  on each page works correctly.
 
 - I tested the sites accessibility through lighthouse, the image below showing the results.
 
-//////////////lighthouse pic/////////////////////////
+![lighthouse](https://user-images.githubusercontent.com/55660566/160016789-e57e3a4a-301e-4935-aefa-233779583508.png)
 
 ### User story testing
-- The navigation menu is very minimalistic across all pages and also maintains its centre position across all screen sizes for ease of use and familiarity across devices.
-- The information is presented in a easy to understand manner free of any jargon users may run into in more formal settings such as meetings with psychologists, speech therapist and so on. 
-- The sign up form  does not have a requirement for the text area to be fill out for the form to allow submission, as not every user, in this case a parent of a newly dianogised child, would be in a position to help with any recommendation to other parents.
+- The app is designed to be minimalistic in terms of the amount of work and clicking a user needs to do to, once the user enters their figures for each macro, one button does everything, tallys up individual totals and works out the total calories conc=sumed so far, and how many they have left if they chose to set a target. 
+- Navigation links between the two pages are place in the same place, the bottom is chosen as opposed to the top like a website, in order to have the app's function take the users focus and so that aesthetically it resembles an app rather than a website.
+- The layout is presented in a simple format so that on first viewing the app, the target audience should have good inkling of how to use the app. The buttons on the chart.html page intentionally use the 'slang' terms for weight loss and weight gain i.e, cutting and bulking, in order to display familiarity with the fitness 'scene' (as these a terms used by seasoned professionals within sports such as power lifting, MMA and much more).
+- 
      
-## Bugs found while creaing and testing
-- I found that a large number of breakpoints had to be used to allow for correct reponsiveness across screen sizes to maintain the sites structural intregrity, and mainly to maintain the aesthetics regarding images matching the sizes of the text sections next to them on the resources page.
-- When vaildating my html, an error occurred as a result of adding a 'muted' attribute to the iframe holding the youtube video.
-Within the 'allow' attribute, I replaced autoplay with muted and the error no longer occurs, and the video loads and does not play until prompted and without audio until prompted otherwise.
+## Bugs found while creating and testing
+- While testing an earlier version of the app, each input fields had below it an 'add' button. This button when clicked would add the figure in the input field to the corresponding 'total grams', then the user had to clicked 'Calculate total Calories'. A bug or rather a loop hole for potential user error is that the user could continuously click 'Calculate total Calories' and continue adding the figures in each 'Total grams' which would see the total calories increase while each of the three 'total grams' would stay the same.
+I decided the best course of action was to remove the 'add' button, place the add protein, add carb and add fat function in the onclick attribute of 'Calculate total Calories'. This eliminated the issue and also results in less work to be done by the user creating a better and easier user experience. 
+-
   
-## deployment
+## Deployment
 
 I deployed the website through github pages through the following steps:
 - I saved, commited and push my work to github using the commands git add ., git commit -m "example comment", and git push respectively.
 - From my project repository I then navigated to the settings tab to find the github pages section where in the source section I selected main branch from the drop down menu and selected save, a link was then created for the published site.
 
 ## credits
-- The code block for the charts where taken from google charts examples and the information adapted to suit the needs of the app.
- Codetaken from this webpage https://www.tutorialspoint.com/googlecharts/googlecharts_pie_basic.htm 
+- The code block for the charts was taken from google charts examples and the information adapted to suit the needs of the app.
+ Code taken from this webpage https://www.tutorialspoint.com/googlecharts/googlecharts_pie_basic.htm 
 
 
-notes
 
-bugs
-function totalal-- could not access variables in another function declared with var so had to copy and paste into function again
 

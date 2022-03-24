@@ -147,7 +147,7 @@ function totalFat() {
  google.charts.setOnLoadCallback(maintenance);
 
 
- //onclick cut chart 
+ //onclick cutting chart 
 
  function cut() {
     // Define the chart to be drawn.
@@ -174,7 +174,7 @@ function totalFat() {
  google.charts.Callback(cut);
 
 
- //onclick bulk chart
+ //onclick bulking chart
 
  function bulk() {
     // Define the chart to be drawn.

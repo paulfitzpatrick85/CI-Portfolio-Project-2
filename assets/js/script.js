@@ -125,7 +125,7 @@ function totalFat() {
 
    function maintenance() {
     // Define the chart to be drawn.
-    var data = new google.visualization.DataTable();
+    let data = new google.visualization.DataTable();
     data.addColumn('string', 'Browser');
     data.addColumn('number', 'Percentage');
     data.addRows([
@@ -135,13 +135,13 @@ function totalFat() {
        ]);
        
     // Set chart options
-    var options = {
+    let options = {
        'title':'Popular maintenance macro ratio',
        backgroundColor: '#7E77DB',
     };
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('chart'));
+    let chart = new google.visualization.PieChart(document.getElementById('chart'));
     chart.draw(data, options);
  }
  google.charts.setOnLoadCallback(maintenance);
@@ -151,7 +151,7 @@ function totalFat() {
 
  function cut() {
     // Define the chart to be drawn.
-    var data = new google.visualization.DataTable();
+    let data = new google.visualization.DataTable();
     data.addColumn('string', 'Browser');
     data.addColumn('number', 'Percentage');
     data.addRows([
@@ -161,14 +161,14 @@ function totalFat() {
      ]);
        
     // Set chart options
-    var options = {
+    let options = {
        'title':'Popular cutting macro ratio',
         backgroundColor: '#7E77DB',
     };
 
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('chart'));
+    let chart = new google.visualization.PieChart(document.getElementById('chart'));
     chart.draw(data, options);
  }
  google.charts.Callback(cut);
@@ -178,7 +178,7 @@ function totalFat() {
 
  function bulk() {
     // Define the chart to be drawn.
-    var data = new google.visualization.DataTable();
+    let data = new google.visualization.DataTable();
     data.addColumn('string', 'Browser');
     data.addColumn('number', 'Percentage');
     data.addRows([
@@ -188,13 +188,13 @@ function totalFat() {
      ]);
        
     // Set chart options
-    var options = {
+    let options = {
        'title':'Popular bulking macro ratio',
        backgroundColor: '#7E77DB',
     };
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('chart'));
+    let chart = new google.visualization.PieChart(document.getElementById('chart'));
     chart.draw(data, options);
  }
  google.charts.Callback(bulk);

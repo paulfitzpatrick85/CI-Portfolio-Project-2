@@ -119,7 +119,7 @@ function totalFat() {
 
    
 
-   //pie chart functions
+   //credit: pie chart functions are taking from goole chart example at this url https://www.tutorialspoint.com/googlecharts/googlecharts_pie_basic. 
 
    //onload chart
 

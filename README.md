@@ -106,13 +106,14 @@ I decided the best course of action was to remove the 'add' button, place the ad
   
 ## Deployment
 
-I deployed the website through github pages through the following steps:
-- I saved, commited and push my work to github using the commands git add ., git commit -m "example comment", and git push respectively.
+I deployed the web app through github pages through the following steps:
+- I saved, commited and push my work to github using the commands 'git add .',' git commit -m "example comment"', and 'git push' respectively.
 - From my project repository I then navigated to the settings tab to find the github pages section where in the source section I selected main branch from the drop down menu and selected save, a link was then created for the published site.
 
 ## credits
 - The code block for the charts was taken from google charts examples and the information adapted to suit the needs of the app.
  Code taken from this webpage https://www.tutorialspoint.com/googlecharts/googlecharts_pie_basic.htm 
+- The initial plan for the app was to have one chart  and have it be responsive to the user input, but that proved beyond my current knowledge. The chart was left in with future maintenability in mind, in that I learn more throughout the course I can return to complete the initial intention.
 
 
 

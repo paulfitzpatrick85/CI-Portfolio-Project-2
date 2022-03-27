@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 body {
-    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
-    
+    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);  
 } 
 
 .input-area {
@@ -19,19 +18,16 @@ body {
 }
 
 table {
-    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
-    
+    background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);  
 }
 
 h1 {
     padding-top: 20px;
     letter-spacing: 8px;
-    font-family: Orbitron, sans-serif;
-          
+    font-family: Orbitron, sans-serif;          
 }
 label {
-    font-weight: bolder;
-   
+    font-weight: bolder;  
 }
 
 .bold-text {
@@ -57,8 +53,7 @@ table {
     width: 35%; 
     margin: 20px auto;
     background: radial-gradient(circle, rgba(230,174,238,0.7151902997527135) 0%, rgba(97,147,203,0.9028653697807247) 100%);
-    border-radius: 15px;
-    
+    border-radius: 15px;    
 } 
 
 #calculate-div {
@@ -93,7 +88,6 @@ table {
 p {
     padding: 0;
 }
-
 
 .outputs {
     text-decoration: underline rgba(63,94,251,0.7516048655790442);
@@ -141,7 +135,6 @@ p {
     border: solid #484B4D;
 }
 
-
 /* media queries*/
 
 @media screen and (max-width: 555px) {
@@ -180,7 +173,7 @@ p {
 
   #chart-input-area {
     height: 630px;
-}
+  }
 }
 
 @media screen and (max-width: 663px) {

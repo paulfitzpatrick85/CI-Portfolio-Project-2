@@ -34,6 +34,7 @@ The number entered is then displayed in 'Calorie Target'.
  If the user enters anything that is not a number in the prompt, an alert will follow that reads "Sorry! (text entered) isn't a number! Please refresh the page and try again!" The user has the choice to refresh the page or continue using the app, in which case 'Calorie Target' will diplay "Target Not Set!"
 
  ![NaNmessage](https://user-images.githubusercontent.com/55660566/159678510-f90d00d4-f1ba-4118-a503-8e7ba8970477.png)
+
 ![TargetNotSet1](https://user-images.githubusercontent.com/55660566/159679067-d9fc76ff-f230-4df2-8c23-287490e5582e.png)
  
  ## Inputting Macros
@@ -73,6 +74,7 @@ This was thought to be a bug until the effect of the refresh was pointed out to 
 - I tested my html on the w3c vaildator and my css on jigsaw and found all code to be ok with no errors.
 
 ![htmlValid](https://user-images.githubusercontent.com/55660566/160015555-342b6f9d-4f7d-46a5-a86d-42150f3b784f.png)
+
 ![html2Valid](https://user-images.githubusercontent.com/55660566/160015568-d423cb6b-bc46-4f45-98a1-5e38d7bb692e.png)
 
 ![cssValid](https://user-images.githubusercontent.com/55660566/160015588-748a53ce-5bfb-4a86-b607-39bc2b79261a.png)
@@ -94,14 +96,14 @@ The warnings where as follows:
 ![lighthouse](https://user-images.githubusercontent.com/55660566/160016789-e57e3a4a-301e-4935-aefa-233779583508.png)
 
 ### User story testing
-- The app is designed to be minimalistic in terms of the amount of work and clicking a user needs to do to, once the user enters their figures for each macro, one button does everything, tallys up individual totals and works out the total calories conc=sumed so far, and how many they have left if they chose to set a target. 
+- The app is designed to be minimalistic in terms of the amount of work and clicking a user needs to do to, once the user enters their figures for each macro, one button does everything, tallys up individual macro totals, works out the total calories consumed so far, and how many calories they have left if they chose to set a target. 
 - Navigation links between the two pages are place in the same place, the bottom is chosen as opposed to the top like a website, in order to have the app's function take the users focus and so that aesthetically it resembles an app rather than a website.
 - The layout is presented in a simple format so that on first viewing the app, the target audience should have good inkling of how to use the app. The buttons on the chart.html page intentionally use the 'slang' terms for weight loss and weight gain i.e, cutting and bulking, in order to display familiarity with the fitness 'scene' (as these a terms used by seasoned professionals within sports such as power lifting, MMA and much more).
 - 
      
 ## Bugs found while creating and testing
 - While testing an earlier version of the app, each input fields had below it an 'add' button. This button when clicked would add the figure in the input field to the corresponding 'total grams', then the user had to clicked 'Calculate total Calories'. A bug or rather a loop hole for potential user error is that the user could continuously click 'Calculate total Calories' and continue adding the figures in each 'Total grams' which would see the total calories increase while each of the three 'total grams' would stay the same.
-I decided the best course of action was to remove the 'add' button, place the add protein, add carb and add fat function in the onclick attribute of 'Calculate total Calories'. This eliminated the issue and also results in less work to be done by the user creating a better and easier user experience. 
+I decided the best course of action was to remove the 'add' button, place the 'add protein', 'add carb' and 'add fat' function in the onclick attribute of 'Calculate total Calories'. This eliminated the issue and also results in less work to be done by the user creating a better and easier user experience. 
 -
   
 ## Deployment
@@ -113,7 +115,7 @@ I deployed the web app through github pages through the following steps:
 ## credits
 - The code block for the charts was taken from google charts examples and the information adapted to suit the needs of the app.
  Code taken from this webpage https://www.tutorialspoint.com/googlecharts/googlecharts_pie_basic.htm 
-- The initial plan for the app was to have one chart  and have it be responsive to the user input, but that proved beyond my current knowledge. The chart was left in with future maintenability in mind, in that I learn more throughout the course I can return to complete the initial intention.
+- The initial plan for the app was to have one chart and have it be responsive to the user input, but that proved to be beyond my current knowledge. The chart was left in with future maintenability in mind, in that as I learn more throughout the course I can return to complete the initial intention.
 
 
 

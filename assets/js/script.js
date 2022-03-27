@@ -84,7 +84,7 @@ function totalFat() {
          
         //if all three inputs fields not are input with the '+' or '-' buttons, the calculate total calories will not work, but inputs are still added to 'totals', the code below prevents this
     } else {
-        alert("You need to add inputs for Protein, Carbs and Fat!!");
+        alert("You need to add inputs (which must be positive numbers!) for Protein, Carbs and Fat!!");
         document.getElementById("pro-total").innerText = parseInt(document.getElementById("pro-total").innerText) - parseInt(document.getElementById('add-protein').value);
         document.getElementById("carb-total").innerText = parseInt(document.getElementById("carb-total").innerText) - parseInt(document.getElementById('add-carb').value);
         document.getElementById("fat-total").innerText = parseInt(document.getElementById("fat-total").innerText) - parseInt(document.getElementById('add-fat').value);

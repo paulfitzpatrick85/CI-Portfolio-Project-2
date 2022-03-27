@@ -44,7 +44,6 @@ function subF() {
 }
 
 
-
 // functions to add input field figures to totals
 
 function totalProtein() {     
@@ -91,14 +90,12 @@ function totalFat() {
     }
 } 
 
-    
 
    //clear inputs on clicking calculate Total Calories
    function clearInput() {
      document.getElementById("add-protein").value = "0";
      document.getElementById("add-carb").value = "0";
      document.getElementById("add-fat").value = "0";
-
    }
 
    //subtract total calories from target calories, if target alert is not answered correctly, equation is not done
@@ -112,13 +109,10 @@ function totalFat() {
     let calTotal = parseInt(document.getElementById("cal-total").innerText);
     remValue.innerText = targetCals - calTotal;
     }                          
-    
-    
-    
-   }
+     
+ }
 
    
-
    //credit: pie chart functions are taking from goole chart example at this url https://www.tutorialspoint.com/googlecharts/googlecharts_pie_basic. 
 
    //onload chart
